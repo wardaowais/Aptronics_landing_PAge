@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", sans-serif;
+    box-sizing: border-box;
+}
+
+.body-container {
+    background: url(bg.png) no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    width: 80vw;
+    margin: auto;
+    padding: 10px 0px;
+    align-items: center;
+    color: white;
+}
+
+.right {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    font-size: 25px;
+}
+
+.right {
+    display: flex;
+    gap: 57px;
+    align-items: center;
+
+
+}
+
+
+.menu {
+    display: flex;
+    gap: 40px;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.menu li {
+    list-style: none;
+}
+
+.projectbutton {
+    background-color: rgba(0, 209, 255, 255);
+    padding: 16px;
+    border-radius: 7px;
+    color: white;
+}
+
+.hamburger {
+    display: none;
+}
+
+.banner-container {
+
+    display: flex;
+    justify-content: flex-start;
+    width: 80vw;
+    margin: 20vh auto;
+    color: white;
+
+
+}
+
+.banner {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    color: white;
+    gap: 20px;
+}
+
+.heading {
+    font-weight: 700;
+    font-size: 50px;
+
+}
+
+.paragraph {
+    font-size: 18px;
+    line-height: 26px;
+}
+
+.talk {
+    background-color: rgba(0, 209, 255, 255);
+    padding: 14px;
+    outline: none;
+    border: none;
+    border-radius: 7px;
+    width: 130px;
+    color: white;
+    font-size: 16px;
+}
+
+.serviceContainer {
+    display: flex;
+    background: linear-gradient(to bottom right, #59dde7, #2596be, #ed5df1) no-repeat center center fixed;
+    min-height: 800px;
+
+
+
+}
+
+.services {
+    margin: 0px auto;
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+.design {
+    color: #d1d1d1;
+    margin-top: 40px;
+    text-align: center;
+}
+
+.design-para {
+    color: white;
+    font-weight: 600;
+    font-size: 39px;
+    text-align: center;
+    max-width: 980px;
+    margin-top: 17px;
+    line-height: 1.6;
+
+}
+
+.service-items {
+    margin-top: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    align-items: center;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+
+
+}
+
+.itemTitle {
+
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+
+
+
+}
+
+
+@media (max-width: 938px) {
+    .navbar {
+
+        width: 100vw;
+
+        padding: 10px 20px;
+        position: relative;
+        align-items: unset;
+
+    }
+
+    .hamburger {
+        display: block;
+        z-index: 1;
+
+    }
+
+    .hamburger img {
+        width: 40px;
+
+
+    }
+
+    .right {
+        display: none;
+    }
+
+    .menu {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .projectbutton {
+        display: flex;
+        border-radius: unset;
+        width: 100%;
+        margin-top: 20px;
+        justify-content: center;
+    }
+
+    .mobile-menu {
+
+        background-color: #171717;
+        gap: 14px;
+        position: absolute;
+        flex-direction: column;
+        right: 0;
+        top: 89px;
+        width: 100%;
+        align-items: center;
+        height: 450x;
+        justify-content: center;
+        gap: 13px;
+        opacity: 97%;
+        padding: 23px;
+        transition: right ease-in .4s;
+
+    }
+
+    .banner-container {
+
+        width: 100vw;
+        padding: 20px;
+        color: white;
+
+    }
+
+    .service-items {
+        flex-direction: column;
+        gap: 45px;
+
+
+
+
+
+
+    }
+
+    .item img {
+        width: 100px;
+
+
+    }
+
+    .itemTitle {
+
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+
+
+
+
+    }
+
+
+}
+
+@media (max-width: 547px) {
+    .heading {
+        font-weight: 700;
+        font-size: 40px;
+
+    }
+
+    .body-container {
+
+
+        height: 75vh;
+
+    }
+
+    .design-para {
+
+        font-weight: 400;
+        font-size: 19px;
+
+
+
+
+    }
+
+
+}
