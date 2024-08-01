@@ -1,10 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 
 * {
     margin: 0;
     padding: 0;
-    font-family: "Inter", sans-serif;
+    font-family: "Poppins", sans-serif;
     box-sizing: border-box;
+}
+.main-container{
+    width: 80vw;
+    margin: auto;
 }
 
 .body-container {
@@ -12,17 +17,29 @@
     background-size: cover;
     height: 100vh;
     overflow: hidden;
+  
 }
+
 
 .navbar {
     display: flex;
+    height: 70px;
     justify-content: space-between;
     width: 80vw;
     margin: auto;
-    padding: 10px 0px;
+    padding: 10px 0;
     align-items: center;
     color: white;
+  /* Ensure it has a background color */
+
+  
 }
+
+.navbar ul li a{
+    color: white;
+    text-decoration: none;
+}
+
 
 .right {
     display: flex;
@@ -57,6 +74,10 @@
     background-color: rgba(0, 209, 255, 255);
     padding: 16px;
     border-radius: 7px;
+    color: white;
+}
+.projectbutton  a {
+    text-decoration: none;
     color: white;
 }
 
@@ -108,7 +129,7 @@
 .serviceContainer {
     display: flex;
     background: linear-gradient(to bottom right, #59dde7, #2596be, #ed5df1) no-repeat center center fixed;
-    min-height: 800px;
+    min-height: 557px;
 
 
 
@@ -133,9 +154,9 @@
 .design-para {
     color: white;
     font-weight: 600;
-    font-size: 39px;
+    font-size: 30px;
     text-align: center;
-    max-width: 980px;
+    max-width: 850px;
     margin-top: 17px;
     line-height: 1.6;
 
@@ -171,6 +192,54 @@
 
 
 }
+
+.section-head{
+    font-size: 37px;
+    text-align: center;
+    padding: 42px;
+    font-weight: 600;
+}
+
+
+
+/* Section Component Styling */
+.section-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+
+.left-section{
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+    Width: 499px;
+  
+  
+   
+}
+.left-section .left-heading{
+    font-size: 31px;
+    font-weight: 500;
+    line-height: 49px;
+   
+}
+.left-section .left-para{
+    font-size: 20px;
+   
+}
+.left-name{
+    color: #4c9ed9;
+   font-weight:600;
+}
+
+.right-section img{
+    width: 400px;
+    
+}
+
+
 
 
 @media (max-width: 938px) {

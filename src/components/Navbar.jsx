@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   const [showMediaIcons, setShowMediaIcons] = useState(false);
@@ -12,12 +13,12 @@ const Navbar = () => {
 
         <div className={showMediaIcons ? "mobile-menu active" : "right"}>
           <ul className="menu">
-            <li>Service</li>
-            <li>Work</li>
-            <li>About</li>
-            <li>Contact</li>
+            <li><Link to="/service">Service</Link></li>
+            <li><Link to="/work">Work</Link></li>
+            <li><Link to="/about">About</Link></li>
+            <li><Link to="/contact">Contact</Link></li>
           </ul>
-          <div className="projectbutton">Estimated Project</div>
+          <button className="projectbutton">Estimated Project</button>
         </div>
 
         <div className="hamburger">
