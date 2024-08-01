@@ -238,6 +238,28 @@
     width: 400px;
     
 }
+ /* technologies section */
+ .tech-icons{
+    display: flex;
+    gap: 67px;
+    margin-top: 17px;
+}
+ .tech-icons li{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+ .tech-icons li img{
+   width: 50px;
+ }
+ .css-19kzrtu{
+    padding: unset !important;
+ }
+
+
+
 
 
 
